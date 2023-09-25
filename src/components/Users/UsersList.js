@@ -6,8 +6,8 @@ const UsersList = ({ users }) => {
   return (
     <Card className={styles.users}>
       <ul>
-        {users.map(({ username, age }, index) => (
-          <li key={index}>{`${username} (${age} years old)`}</li>
+        {users.map(({ username, age, id }) => (
+          <li key={id}>{`${username} (${age} years old)`}</li>
         ))}
       </ul>
     </Card>
